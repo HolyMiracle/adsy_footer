@@ -1,0 +1,224 @@
+$primary-clr: #1abc9c;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+.footer {
+    width: 100%;
+    &__logo {
+        margin-top: 60px;
+        text-align: center;
+        & > img {
+            width: 85px;
+        }
+    }
+    &__flex {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        color: #939598;
+        &-form {
+            flex: 1 1 55%;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            & input {
+                margin: 0;
+                padding: 10px;
+                border: 1px solid #cccccc;
+                background-color: #fff;
+                font-size: 16px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                &:nth-child(1),
+                &:nth-child(2) {
+                    width: 47.5%;
+                }
+                &:nth-child(1) {
+                    margin-right: 5%;
+                }
+                &:nth-child(2) {
+                    float: right;
+                }
+                &:nth-child(3) {
+                    width: 100%;
+                }
+                &:focus {
+                    outline: 2px solid $primary-clr;
+                }
+            }
+            & textarea {
+                font: 'Ubuntu';
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: 400;
+                width: 100%;
+                height: 200px;
+                padding: 10px;
+                border: 1px solid #cccccc;
+                background-color: #fff;
+                font-size: 16px;
+                box-sizing: border-box;
+                resize: none;
+                overflow: auto;
+                &:focus {
+                    outline: 2px solid $primary-clr;
+                }
+            }
+            & .button {
+                margin-top: 70px;
+                color: #fff;
+                background-color: $primary-clr;
+                border: 0;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 185px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #179c82;
+                }
+            }
+        }
+        &-describe {
+            flex: 1 1 45%;
+            margin-left: 45px;
+        }
+    }
+    &__describe {
+        margin-top: 55px;
+        padding: 45px 0;
+        width: 1350px;
+        background-color: #f7f7f7;
+        &-content {
+            margin: 0 auto;
+            width: 1170px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-box {
+            width: 390px;
+            text-align: center;
+            &:nth-child(2) {
+                border-left: 2px solid #818181;
+                border-right: 2px solid #818181;
+            }
+            & > img {
+                height: 45px;
+            }
+            & > a {
+                color: $primary-clr;
+                text-decoration: none;
+                margin-top: 20px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__try-out {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #1abc9c;
+        padding: 45px 0 50px 230px;
+    }
+}
+
+.clr-green {
+    color: $primary-clr;
+}
+
+.clr-l-grey {
+    color: #a5a5a5;
+}
+
+.clr-d-grey {
+    color: #4c4c4c;
+}
+
+.clr-white {
+    color: #fff;
+}
+
+.font-b {
+    font-weight: 700;
+}
+
+.ls-5 {
+    letter-spacing: 5px;
+}
+
+.font-l {
+    font-weight: 300;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-46 {
+    font-size: 46px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.text-up {
+    text-transform: uppercase;
+}
+
+.bold-18 {
+    margin: 30px 0 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.light-18 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media (max-width: 1376px) {
+    .wrapper {
+        width: 900px;
+    }
+
+    .footer {
+        &__describe {
+            width: 900px;
+            &-content {
+                width: 770px;
+            }
+        }
+        &__try-out {
+            padding-left: 100px;
+        }
+    }
+}
